@@ -85,7 +85,7 @@ print opt_prob
 ipopt = IPOPT()
 
 # Solve Problem with Optimizer Using Finite Differences
-ipopt.setOption('IFILE','ipopt.out')
+ipopt.setOption('output_file','ipopt.out')
 ipopt.setOption('max_iter',2)
 ipopt.setOption('linear_system_scaling','none')
 ipopt.setOption('tol',1e-2)
